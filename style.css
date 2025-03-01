@@ -7,9 +7,16 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 20px;
+    background-image: url("images/header-bg.jpg"); /* Sti til bildet */
+    background-size: cover; /* Sørger for at bildet dekker hele headeren */
+    background-position: center; /* Sentrerer bildet */
+    background-repeat: no-repeat; /* Hindrer gjentakelse */
+    height: 300px; /* Juster høyden etter behov */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Gjør teksten hvit for bedre kontrast */
+    text-align: center;
 }
 
 nav ul {
