@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    position: relative; /* Sørger for at pseudoelementet plasseres riktig */
     background-image: url("field-trip-local-museum-students-eagerly-exploring-exhibits-learn-about-history_741910-47221.avif"); /* Sti til bildet */
     background-size: cover; /* Sørger for at bildet dekker hele headeren */
     background-position: center; /* Sentrerer bildet */
@@ -17,6 +18,7 @@ header {
     justify-content: center;
     color: white; /* Gjør teksten hvit for bedre kontrast */
     text-align: center;
+    overflow: hidden; /* Hindrer at innholdet går utenfor headeren */
 }
 
 header::before {
@@ -26,13 +28,14 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: inherit;
+    background-image: inherit; /* Arver bakgrunnsbildet fra header */
     background-size: inherit;
     background-position: inherit;
     background-repeat: inherit;
     filter: blur(10px); /* Juster styrken på bluren */
-    z-index: -1;
+    z-index: -1; /* Sender det bak tekstinnholdet i headeren */
 }
+
 
 
 nav ul {
