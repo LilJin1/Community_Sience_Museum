@@ -7,18 +7,19 @@ body {
 }
 
 header {
-    position: relative; /* Sørger for at pseudoelementet plasseres riktig */
-    background-image: url("field-trip-local-museum-students-eagerly-exploring-exhibits-learn-about-history_741910-47221.avif"); /* Sti til bildet */
-    background-size: cover; /* Sørger for at bildet dekker hele headeren */
-    background-position: center; /* Sentrerer bildet */
-    background-repeat: no-repeat; /* Hindrer gjentakelse */
-    height: 300px; /* Juster høyden etter behov */
+    position: relative;
+    background-image: url("field-trip-local-museum-students-eagerly-exploring-exhibits-learn-about-history_741910-47221.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stabler teksten vertikalt */
+    align-items: center; /* Sentrerer tekstene horisontalt */
+    justify-content: center; /* Sentrerer tekstene vertikalt */
     color: white; /* Gjør teksten hvit for bedre kontrast */
     text-align: center;
-    overflow: hidden; /* Hindrer at innholdet går utenfor headeren */
+    overflow: hidden;
 }
 
 header::before {
@@ -32,9 +33,15 @@ header::before {
     background-size: inherit;
     background-position: inherit;
     background-repeat: inherit;
-    filter: blur(50px); /* Juster styrken på bluren */
+    filter: blur(10px); /* Juster styrken på bluren */
     z-index: -1; /* Sender det bak tekstinnholdet i headeren */
 }
+
+header h1, header p {
+    display: block; /* Sørger for at tekstene blir på nye linjer */
+    margin: 0; /* Fjerner margin for å unngå mellomrom */
+}
+
 
 
 
