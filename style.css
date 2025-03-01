@@ -32,7 +32,7 @@ header::before {
     background-size: inherit;
     background-position: inherit;
     background-repeat: inherit;
-    filter: blur(10px); /* Juster styrken på bluren */
+    filter: blur(50px); /* Juster styrken på bluren */
     z-index: -1; /* Sender det bak tekstinnholdet i headeren */
 }
 
